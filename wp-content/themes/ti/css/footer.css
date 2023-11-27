@@ -1,0 +1,206 @@
+@media (max-width:376px) {
+    .footer{
+        width: 100%;
+        height: 380px;
+    }
+    .slider-size{   
+        width: 325px;
+        height: 267px;
+        flex-shrink: 0;
+    }
+    .slick-prev{
+        cursor: pointer;
+        position: relative;
+        top: 317px;
+        left: 40%;
+        background-image: url('../images/vector2.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 37px;
+        width: 14px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        background-color: transparent;
+        border: none;
+        z-index: 2;
+    }
+    .slick-next{
+        cursor: pointer;
+        position: relative;    
+        left: 73%;
+        top: 5%;
+        background-image: url('../images/vector1.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 37px;
+        width: 14px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        background-color: transparent;
+        border: none;
+        z-index: 2;
+    }
+    .used-image{
+        position: relative;
+        top: 14%;
+        left: 50%;
+        color: white;
+        z-index: 1;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+    }
+}
+@media (min-width:425px) {
+    .footer{
+        width: 100%;
+        height: 641px;
+    }
+    .slider-size{   
+        margin: 0 auto;
+        width: 1200px;
+        height: 472px;
+    }
+    .slick-prev{
+        cursor: pointer;
+        position: relative;
+        top: 520px;
+        left: 45%;
+        background-image: url('../images/vector2.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 37px;
+        width: 14px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        background-color: transparent;
+        border: none;
+        z-index: 2;
+    }
+    .slick-next{
+        cursor: pointer;
+        position: relative;    
+        left: 55%;
+        top: 2%;
+        background-image: url('../images/vector1.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 37px;
+        width: 14px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        background-color: transparent;
+        border: none;
+        z-index: 2;
+    }
+    .used-image{
+        position: relative;
+        top: 9%;
+        left: 50%;
+        color: white;
+        z-index: 1;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+    }
+}
+/* Slider */
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus{
+    outline: none;
+}
+.slick-list.dragging{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list{
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after{
+    display: table;
+    content: '';
+}
+.slick-track:after{
+    clear: both;
+}
+.slick-loading .slick-track{
+    visibility: hidden;
+}
+
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide{
+    float: right;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-slide.slick-loading img{
+    display: none;
+}
+.slick-slide.dragging img{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+.slick-loading .slick-slide{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden{
+    display: none;
+}
+.slider-size>div>img{
+    width: 795px;
+    height: 472px;
+}
